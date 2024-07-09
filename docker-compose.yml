@@ -34,21 +34,21 @@ services:
     depends_on:
       - postgres
     environment:
-      - DATABASE_URL=postgresql://app:task2@hngdevops@postgres:5432/app
+      - DATABASE_URL=postgresql://app:oXROms9Cie4E@ep-plain-leaf-a4b9ragz-pooler.us-east-1.aws.neon.tech:5432/verceldb
 
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: app
-      POSTGRES_PASSWORD: task2@hngdevops
-      POSTGRES_DB: app
+      POSTGRES_USER: default
+      POSTGRES_PASSWORD: oXROms9Cie4E
+      POSTGRES_DB: verceldb
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
   adminer:
     image: adminer
     ports:
-      - "8080:8080"
+      - "8081:8080"
     labels:
       - "traefik.http.routers.adminer.rule=Host(`db.domain`)"
 
