@@ -39,7 +39,7 @@ services:
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: default
+      POSTGRES_USER: app
       POSTGRES_PASSWORD: oXROms9Cie4E
       POSTGRES_DB: verceldb
     volumes:
