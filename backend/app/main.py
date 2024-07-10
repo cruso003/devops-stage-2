@@ -28,8 +28,9 @@ app.add_middleware(
         "http://localhost:5173",
         "https://localhost",
         "https://localhost:5173",
-        "https://devopstwo.chickenkiller.com",
-        "http://devopstwo.chickenkiller.com/"
+        "https://truth.chickenkiller.com",
+        "http://truth.chickenkiller.com",
+        "http://23.22.64.216"
     ],
     allow_credentials=True,
     allow_methods=["*"],
